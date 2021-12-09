@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Celsius to Fahrenheit Converter</title>
+    <script>
+        var celsius;//our celsius variable
+        celsius = window.prompt("Please enter the Celsius value you wish to convert to Fahrenheit.");
+        var t = parseFloat(celsius);//converting celsius string to numbers
+        fahrenheit = (celsius * (9 / 5)) + 32//converting celsius to fahrenheit
+
+    </script>
+</head>
+
+<body style="background-color:rgb(189, 136, 115)">
+
+    <h2>This is a Celsius to Fahrenheit Converter.</h2>
+    <h6>By Danil Podolskiy</h6>
+    <hr>
+    <p>
+    <h3>
+        In this document we used programming design to implement a successful temperature conversion.
+    </h3>
+    <p>To see flow chart please for this program please click on this <a
+            href="C2FConverter-Design-Danil_Podolskiy.doc.pptx">link</a>.</p>
+    </p>
+    <script>document.writeln("<h4>Your entered Celsius temperature of " + celsius
+            + " degrees will result in " + fahrenheit + " degrees of Fahrenheit</h4>")</script>
+    <p>Reload for another conversion.</p>
+</body>
+
+</html>
