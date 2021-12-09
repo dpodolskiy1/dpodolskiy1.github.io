@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Dynasty Casino Chip Counter</title>
+    <script>
+        var black;//color variables
+        var blue;
+        var red;
+        var green;
+        var sum;//sum of $ values
+        black = window.prompt("Please enter the amount of Black chips with $5 face value.");
+        blue = window.prompt("Please enter the amount of Blue chips with $20 face value.");
+        red = window.prompt("Please enter the amount of Red chips with $50 face value.");
+        green = window.prompt("Please enter the amount of Black chips with $100 face value.");
+        var blackVal = parseInt(black) * 5;//converting chips amount to $ value
+        var blueVal = parseInt(blue) * 20;
+        var redVal = parseInt(red) * 50;
+        var greenVal = parseInt(green) * 100;
+        sum = blackVal + blueVal + redVal + greenVal;//adding up all the values.
+    </script>
+</head>
+
+<body style="background-color:rgb(231, 194, 144)">
+
+    <h2>This is the Dynasty Casino chip receipt.</h2>
+    <h6>By Danil Podolskiy</h6>
+    <hr>
+    <p>
+    <h3>
+        Please see your Dynasty Casino chip count and amount breakdown bellow..
+    </h3>
+    <p>To see flow chart please for this program please click on this <a
+            href="C2FConverter-Design-Danil_Podolskiy.doc.pptx">link</a>.</p>
+    </p>
+    <script>
+        document.writeln("<h4>The amount of Black chips deposited is " + black
+            + " and its corresponding dollar value is $" + blackVal + ".</h4>");
+        document.writeln("<h4>The amount of Blue chips deposited is " + blue
+            + " and its corresponding dollar value is $" + blueVal + ".</h4>");
+        document.writeln("<h4>The amount of Red chips deposited is " + red
+            + " and its corresponding dollar value is $" + redVal + ".</h4>");
+        document.writeln("<h4>The amount of Green chips deposited is " + green
+            + " and its corresponding dollar value is $" + greenVal + ".</h4>");
+        document.writeln("<h3> You over all cash value from all your chips is $" + sum + ".</h3>");
+    </script>
+
+    <p>Reload page for a new receipt.</p>
+</body>
+
+</html>
